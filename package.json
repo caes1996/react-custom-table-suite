@@ -1,6 +1,6 @@
 {
   "name": "react-custom-table-suite",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A comprehensive React table component suite with advanced features like filtering, sorting, pagination, and export capabilities",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
