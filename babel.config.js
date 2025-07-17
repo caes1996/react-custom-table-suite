@@ -1,7 +1,9 @@
 module.exports = {
   presets: [
     ['@babel/preset-env', { modules: false }],
-    ['@babel/preset-react', { runtime: 'automatic' }]
+    ['@babel/preset-react', { 
+      runtime: 'classic' // Cambiar a classic para requerir imports explícitos
+    }]
   ],
   env: {
     test: {

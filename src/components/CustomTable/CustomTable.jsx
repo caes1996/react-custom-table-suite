@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState, useEffect, useMemo } from 'react';
 import { useTable, useFilters, usePagination, useSortBy } from 'react-table';
 import PropTypes from 'prop-types';

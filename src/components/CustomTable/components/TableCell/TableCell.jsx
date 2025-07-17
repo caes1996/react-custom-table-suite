@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import { formatDate, formatSaldoCOP, formatPercentage } from '../../../../utils';
 import { renderRowTipo } from '../../utils';
