@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { TriangleAlert } from 'lucide-react';
+import { AlertTriangle } from 'lucide-react';
 
 /**
  * NoResult component for displaying when no data is found
@@ -16,7 +16,7 @@ const NoResult = ({
   return (
     <div className="noresult">
       <div className="text-center">
-        <TriangleAlert size={size} />
+        <AlertTriangle size={size} />
         <h5 className="mt-3">{title}</h5>
         <p className="text-muted mb-0">{message}</p>
       </div>
