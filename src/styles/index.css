@@ -1,0 +1,171 @@
+/* Default styles for react-custom-table-suite */
+
+.noresult {
+  padding: 2rem;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table-card {
+  border-radius: 0.375rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Pagination styles */
+.pagination-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.page-item {
+  padding: 0.375rem 0.75rem;
+  margin: 0 0.125rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  background-color: #fff;
+  color: #0d6efd;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.page-item:hover {
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+}
+
+.page-item.active {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
+}
+
+.page-item.disabled {
+  color: #6c757d;
+  pointer-events: none;
+  background-color: #fff;
+  border-color: #dee2e6;
+  opacity: 0.65;
+}
+
+.dots {
+  padding: 0.375rem 0.75rem;
+  color: #6c757d;
+}
+
+/* Search input styles */
+.search-icon {
+  color: #6c757d;
+  pointer-events: none;
+}
+
+/* Actions cell styles */
+.actions-cell {
+  text-align: center !important;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .d-block {
+    display: block !important;
+  }
+  
+  .d-md-none {
+    display: none !important;
+  }
+  
+  .d-none {
+    display: none !important;
+  }
+  
+  .d-md-flex {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .d-md-none {
+    display: none !important;
+  }
+  
+  .d-none {
+    display: none !important;
+  }
+  
+  .d-md-flex {
+    display: flex !important;
+  }
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.me-1 {
+  margin-right: 0.25rem;
+}
+
+.me-2 {
+  margin-right: 0.5rem;
+}
+
+.ms-2 {
+  margin-left: 0.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.ps-5 {
+  padding-left: 3rem;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}

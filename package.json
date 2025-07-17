@@ -1,0 +1,92 @@
+{
+  "name": "react-custom-table-suite",
+  "version": "1.0.0",
+  "description": "A comprehensive React table component suite with advanced features like filtering, sorting, pagination, and export capabilities",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./components": {
+      "import": "./dist/components/index.esm.js",
+      "require": "./dist/components/index.js"
+    },
+    "./hooks": {
+      "import": "./dist/hooks/index.esm.js",
+      "require": "./dist/hooks/index.js"
+    },
+    "./utils": {
+      "import": "./dist/utils/index.esm.js",
+      "require": "./dist/utils/index.js"
+    },
+    "./dist/*": "./dist/*"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "table",
+    "data-table",
+    "pagination",
+    "filter",
+    "sort",
+    "export",
+    "csv",
+    "pdf",
+    "excel",
+    "component",
+    "ui"
+  ],
+  "author": "Cristian Escobar <caes1996@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caes1996/react-custom-table-suite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/caes1996/react-custom-table-suite/issues"
+  },
+  "homepage": "https://github.com/caes1996/react-custom-table-suite#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "dependencies": {
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.5.31",
+    "lucide-react": "^0.263.1",
+    "prop-types": "^15.8.1",
+    "react-csv": "^2.2.2",
+    "react-table": "^7.8.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.0",
+    "@babel/preset-env": "^7.22.0",
+    "@babel/preset-react": "^7.22.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.8",
+    "@rollup/plugin-node-resolve": "^15.3.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "rollup": "^3.29.5",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2"
+  }
+}
