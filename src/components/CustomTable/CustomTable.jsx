@@ -4,7 +4,7 @@ import { useTable, useFilters, usePagination, useSortBy } from 'react-table';
 import PropTypes from 'prop-types';
 
 // Inject styles automatically
-import { useInjectStyles } from '../styles/injectStyles';
+import { useInjectStyles } from '../../styles/injectStyles';
 
 // Internal components
 import {
