@@ -23,8 +23,6 @@ import {
   useTableExport
 } from 'react-custom-table-suite/dist/hooks';
 
-import 'react-custom-table-suite/dist/index.css';
-
 // Sample data for demonstrations
 const sampleData = [
   {

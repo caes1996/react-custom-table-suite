@@ -45,7 +45,6 @@ npm install react-router-dom
 ```jsx
 import React from 'react';
 import { CustomTable } from 'react-custom-table-suite';
-import 'react-custom-table-suite/dist/index.css';
 
 const data = [
   { id: 1, name: 'John Doe', email: 'john@example.com', age: 30 },
@@ -214,12 +213,6 @@ const numeric = validateNumericValue("123abc456"); // "123456"
 
 ## Styling
 
-The package includes basic CSS styles. Import the CSS file:
-
-```jsx
-import 'react-custom-table-suite/dist/index.css';
-```
-
 For full Bootstrap integration, also import Bootstrap CSS:
 
 ```jsx
@@ -241,6 +234,10 @@ You can override the default styles by targeting the CSS classes:
 
 .pagination-wrap {
   /* Pagination container styles */
+}
+
+.page-item {
+  /* Pagination item styles */
 }
 ```
 

@@ -3,6 +3,9 @@ import { useState, useEffect, useMemo } from 'react';
 import { useTable, useFilters, usePagination, useSortBy } from 'react-table';
 import PropTypes from 'prop-types';
 
+// Inject styles automatically
+import { useInjectStyles } from '../styles/injectStyles';
+
 // Internal components
 import {
   LoadingSpinner,
@@ -43,6 +46,9 @@ const CustomTable = ({
   headerColor = '#E1DEF9FF',
   headerTextColor = '#000000',
 }) => {
+  // Inject styles automatically
+  useInjectStyles();
+
   const [searchTerm, setSearchTerm] = useState('');
 
   // Use custom hooks for data processing

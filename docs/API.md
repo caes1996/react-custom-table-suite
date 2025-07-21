@@ -27,32 +27,32 @@ The main table component with advanced features including sorting, filtering, pa
 
 #### Props
 
-| Prop | Type | Default | Required | Description |
-|------|------|---------|----------|-------------|
-| `data` | `Array<Object>` | - | ✅ | Array of objects to display in the table |
-| `columns` | `Array<ColumnConfig>` | - | ✅ | Column configuration array |
-| `itemPerPage` | `number` | `25` | ❌ | Number of items per page |
-| `isLoading` | `boolean` | `false` | ❌ | Show loading spinner |
-| `showExcel` | `boolean` | `true` | ❌ | Show Excel export button |
-| `showPDF` | `boolean` | `true` | ❌ | Show PDF export button |
-| `showCSV` | `boolean` | `true` | ❌ | Show CSV export button |
-| `showFilter` | `boolean` | `true` | ❌ | Show search filter input |
-| `showPagination` | `boolean` | `true` | ❌ | Show pagination controls |
-| `exportOrientation` | `'horizontal' \| 'vertical'` | `'horizontal'` | ❌ | PDF export orientation |
-| `customComponent` | `React.ReactElement` | - | ❌ | Custom component to show when filter is disabled |
-| `rowColor` | `string \| function` | - | ❌ | Row background color (string or function) |
-| `fitContent` | `boolean` | `false` | ❌ | Allow text wrapping in cells |
-| `exportFileName` | `string` | `'Reporte de Datos'` | ❌ | Base name for exported files |
-| `linkComponent` | `React.ComponentType` | - | ❌ | Link component for routing (e.g., React Router Link) |
-| `verticalAlign` | `'top' \| 'middle' \| 'bottom'` | `'middle'` | ❌ | Cell vertical alignment |
-| `headerColor` | `string` | `'#E1DEF9FF'` | ❌ | Table header background color |
-| `headerTextColor` | `string` | `'#000000'` | ❌ | Table header text color |
-| `filters` | `Array<string>` | - | ❌ | Array of field names to filter by |
+| Prop                | Type                              | Default               | Required | Description                                            |
+|---------------------|-----------------------------------|-----------------------|----------|--------------------------------------------------------|
+| `data`              | `Array<Object>`                   | -                     | ✅       | Array of objects to display in the table               |
+| `columns`           | `Array<ColumnConfig>`             | -                     | ✅       | Column configuration array                             |
+| `itemPerPage`       | `number`                          | `25`                  | ❌       | Number of items per page                               |
+| `isLoading`         | `boolean`                         | `false`               | ❌       | Show loading spinner                                   |
+| `showExcel`         | `boolean`                         | `true`                | ❌       | Show Excel export button                               |
+| `showPDF`           | `boolean`                         | `true`                | ❌       | Show PDF export button                                 |
+| `showCSV`           | `boolean`                         | `true`                | ❌       | Show CSV export button                                 |
+| `showFilter`        | `boolean`                         | `true`                | ❌       | Show search filter input                               |
+| `showPagination`    | `boolean`                         | `true`                | ❌       | Show pagination controls                               |
+| `exportOrientation` | `'horizontal' \| 'vertical'`      | `'horizontal'`        | ❌       | PDF export orientation                                 |
+| `customComponent`   | `React.ReactElement`              | -                     | ❌       | Custom component to show when filter is disabled       |
+| `rowColor`          | `string \| function`              | -                     | ❌       | Row background color (string or function)              |
+| `fitContent`        | `boolean`                         | `false`               | ❌       | Allow text wrapping in cells                           |
+| `exportFileName`    | `string`                          | `'Reporte de Datos'`  | ❌       | Base name for exported files                           |
+| `linkComponent`     | `React.ComponentType`             | -                     | ❌       | Link component for routing (e.g., React Router Link)   |
+| `verticalAlign`     | `'top' \| 'middle' \| 'bottom'`   | `'middle'`            | ❌       | Cell vertical alignment                                |
+| `headerColor`       | `string`                          | `'#E1DEF9FF'`       | ❌       | Table header background color                          |
+| `headerTextColor`   | `string`                          | `'#000000'`         | ❌       | Table header text color                                |
+| `filters`           | `Array<string>`                   | -                     | ❌       | Array of field names to filter by                      |
 
 #### ColumnConfig
 
-| Property | Type | Default | Description |
-|----------|------|---------|-------------|
+| Property | Type | Default             | Description                                                    |
+|----------|------|---------------------|----------------------------------------------------------------|
 | `Header` | `string \| function` | - | Column header text or render function |
 | `accessor` | `string \| function` | - | Data accessor key or function |
 | `disableSortBy` | `boolean` | `false` | Disable sorting for this column |

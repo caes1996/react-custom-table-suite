@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { CustomTable, PaginationBar, NoResult } from 'react-custom-table-suite';
-import 'react-custom-table-suite/dist/index.css';
 
 // Sample data
 const sampleData = [
@@ -278,7 +277,6 @@ const BasicUsageExample = () => {
       <div className="mb-4">
         <h5>Importación Básica</h5>
         <pre><code>{`import { CustomTable } from 'react-custom-table-suite';
-import 'react-custom-table-suite/dist/index.css';
 
 const data = [
   { id: 1, name: 'John', email: 'john@example.com' }
